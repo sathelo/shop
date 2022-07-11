@@ -1,5 +1,7 @@
 @import "./normalize.scss";
-@import "./__variables.scss";
+@import "./mixin/mixins.scss";
+@import "./_variables";
+@import "./_fonts";
 
 * {
     margin: 0;
@@ -14,5 +16,13 @@ body {
 }
   
 body {    
-    background: $white;
+    background: $system_background_primary;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }

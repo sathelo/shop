@@ -1,0 +1,127 @@
+.navbar {
+    @include container;
+
+    border: 1px solid $base_color_black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: $system_background_primary;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 205px;
+
+    padding-top: 25px;
+    padding-bottom: 21px;
+
+    &__logo {
+        a {
+            color: $secondary_color_50;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 39px;
+            line-height: 120%;
+            letter-spacing: 0.005em;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 64px;
+    }
+
+    .navigation {
+        width: 100%;
+
+        &-menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            margin-bottom: 0;
+    
+            svg {
+                color: $base_color_black;
+                height: 100%;
+                width: 24px;
+            }
+
+            &__basket {
+                position: relative;
+            
+                .badge {
+                    position: absolute;
+                    right: -16px;
+                    top: -16px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    border-radius: 50%;
+                    background: $secondary_color_50;
+
+                    width: 24px;
+                    height: 24px;
+
+                    color: $text_link_color_white;
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    letter-spacing: 0.005em;
+                }
+            }
+        }
+    
+        &__search {
+            .ant {
+                &-input {
+                    &-affix-wrapper {
+                        height: 56px;
+                        border-color: $base_color_black;
+                        border-right: none;
+                        padding: 16px 10px 16px 30px;
+                        font-family: 'DM Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 125%;
+                        letter-spacing: 0.005em;
+
+                        svg {
+                            color: $text_color_body_2;
+                            height: 100%;
+                            width: 24px;
+                        }
+                    }
+
+                    &-group-addon {
+                        padding: 20px;
+        
+                        button {
+                            height: 56px;
+                        }
+                    }
+                }
+
+                &-btn {
+                    color: $text_color_body_2;
+                    border-color: $base_color_black;
+                    border-left: none;
+                    padding: 0 20px;
+
+                    &-icon-only {
+                        width: 100%;
+        
+                        svg {
+                            height: 100%;
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
